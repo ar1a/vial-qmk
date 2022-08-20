@@ -1,0 +1,16 @@
+{
+  "name": "sharkboard",
+  "matrix": {
+    "rows": 1,
+    "cols": 3
+  },
+  "layouts": {
+    "keymap": [
+      [
+        "0,0",
+        "0,1",
+        "0,2"
+      ]
+    ]
+  }
+}
