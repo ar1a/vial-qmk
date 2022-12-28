@@ -11,7 +11,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(KC_Z, KC_X, KC_C, KC_MUTE, KC_ESCAPE, KC_F2, KC_GRAVE)};
 
 led_config_t g_led_config = {{// Key Matrix to LED Index
-                              {1, 2, 3, NO_LED},
+                              {0, 1, 2, NO_LED},
                               {NO_LED, NO_LED, NO_LED, NO_LED}},
                              {// LED Index to Physical Position
                               {0, 32},
