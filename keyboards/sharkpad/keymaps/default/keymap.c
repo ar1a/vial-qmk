@@ -3,12 +3,12 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
      * ┌───┬───┬───┬───┐
-     * │ Z │ X │ C │ MU│
+     * │ Z │ X │ C │ PP│
      * ├───┼───┼───┼───┘
      * │   │   │   │
      * └───┴───┴───┘
      */
-    [0] = LAYOUT(KC_Z, KC_X, KC_C, KC_MUTE, KC_ESCAPE, KC_F2, KC_GRAVE)};
+    [0] = LAYOUT(KC_Z, KC_X, KC_C, KC_MEDIA_PLAY_PAUSE, KC_ESCAPE, KC_F2, KC_GRAVE)};
 
 led_config_t g_led_config = {{// Key Matrix to LED Index
                               {0, 1, 2, NO_LED},
@@ -20,4 +20,4 @@ led_config_t g_led_config = {{// Key Matrix to LED Index
                              {// LED Index to Flag
                               4, 4, 4}};
 
-const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {[0] = {ENCODER_CCW_CW(KC_MS_WH_DOWN, KC_MS_WH_UP)}};
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {[0] = {ENCODER_CCW_CW(LALT(KC_MS_WH_DOWN), LALT(KC_MS_WH_UP))}};
